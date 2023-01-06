@@ -86,15 +86,15 @@ class Component extends LitElement {
                     <div><h4> Episodes: All ${episodes}</h4></div>
                     <div><h4> Updated: ${day} ${month} ${year} <h4></div>
                 </div>
-                <div><h4> Genres: ${genres} </Sh4></div>
+                <div><h4> Genres: ${genres} </h4></div>
                 <div><h4> About: ${description} </h4></div>
             `
         })
 
         return html`
-            <h1>Available Podcasts:</h1>
-            <control-component></control-component>
-            ${list.length > 0 ? html`<ul>${list}</ul>` : html`<div>No matches</div>`}
+            <h1> Available Podcasts: </h1>
+            <control-component> </control-component>
+            ${list.length > 0 ? html`<ul>${list}</ul>` : html`<div> No matches Found! </div>`}
         `
     }
 }
